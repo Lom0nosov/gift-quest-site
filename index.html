@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Для тебя</title>
+    <meta
+      name="description"
+      content="Небольшой сюрприз с поздравлением и финальной подсказкой."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero card">
+        <p class="eyebrow">С днем рождения</p>
+        <h1 id="hero-title">Для самой любимой девочки</h1>
+        <p id="hero-text" class="hero-text">
+          Ты уже дошла до этого места, а значит впереди осталось только самое
+          приятное.
+        </p>
+        <div class="hero-actions">
+          <button id="open-letter" class="button primary" type="button">
+            Открыть письмо
+          </button>
+          <button id="open-surprise" class="button secondary" type="button">
+            Узнать финал
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Почему именно ты</h2>
+        <div id="reasons" class="reasons"></div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2 class="section-title">Мы вместе уже</h2>
+          <p id="relationship-counter" class="counter">...</p>
+          <p class="muted">Считаю это одним из самых важных подарков в жизни.</p>
+        </article>
+
+        <article class="card">
+          <h2 class="section-title">Небольшое пожелание</h2>
+          <p id="wish-text" class="muted"></p>
+        </article>
+      </section>
+
+      <section id="letter-section" class="card hidden">
+        <h2 class="section-title">Письмо для тебя</h2>
+        <div id="letter-lines" class="letter"></div>
+      </section>
+
+      <section id="surprise-section" class="card hidden accent-card">
+        <p class="eyebrow">Финал</p>
+        <h2 id="surprise-title" class="section-title"></h2>
+        <p id="surprise-text" class="hero-text"></p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
