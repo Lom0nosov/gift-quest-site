@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Для тебя</title>
+    <meta
+      name="description"
+      content="Небольшой сюрприз с поздравлением и финальной подсказкой."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero card">
+        <div class="hero-orb hero-orb-left"></div>
+        <div class="hero-orb hero-orb-right"></div>
+        <div class="hero-spark hero-spark-one"></div>
+        <div class="hero-spark hero-spark-two"></div>
+        <div class="hero-spark hero-spark-three"></div>
+        <p class="eyebrow hero-eyebrow">С днем рождения</p>
+        <h1 id="hero-title" class="hero-heading">Для самой любимой девочки</h1>
+        <p id="hero-text" class="hero-text hero-copy">
+          Ты уже дошла до этого места, а значит впереди осталось только самое
+          приятное.
+        </p>
+        <div class="hero-actions">
+          <button id="open-letter" class="button primary hero-button" type="button">
+            Открыть письмо
+          </button>
+          <button
+            id="open-surprise"
+            class="button secondary hero-button"
+            type="button"
+          >
+            Узнать финал
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Почему именно ты</h2>
+        <div id="reasons" class="reasons"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Небольшой сюрприз</p>
+            <h2 class="section-title">Видео для тебя</h2>
+          </div>
+        </div>
+        <div class="video-shell">
+          <video
+            id="memory-video"
+            class="memory-video hidden"
+            controls
+            playsinline
+            preload="metadata"
+          ></video>
+          <div id="video-placeholder" class="video-placeholder">
+            <p class="video-title">Тут появится твое видео</p>
+            <p class="muted">
+              Я записал для тебя еще кое-что личное. Этот экран оживет, как
+              только видео будет готово.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2 class="section-title">Мы вместе уже</h2>
+          <p id="relationship-counter" class="counter">...</p>
+          <p class="muted">Считаю это одним из самых важных подарков в жизни.</p>
+        </article>
+
+        <article class="card">
+          <h2 class="section-title">Небольшое пожелание</h2>
+          <p id="wish-text" class="muted"></p>
+        </article>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow">Бонус после квеста</p>
+        <h2 class="section-title">Что тебе сейчас хочется?</h2>
+        <p class="muted food-intro">
+          Выбери, что бы тебе хотелось на наш сегодняшний вкусный финал.
+        </p>
+        <div id="food-options" class="food-options"></div>
+        <div id="food-result" class="food-result hidden">
+          <p id="food-result-text" class="hero-text"></p>
+        </div>
+      </section>
+
+      <section id="letter-section" class="card letter-card hidden">
+        <div id="letter-envelope" class="letter-sheet">
+          <p class="eyebrow">Письмо для тебя</p>
+          <h2 class="section-title">Немного от сердца</h2>
+          <div id="letter-lines" class="letter"></div>
+        </div>
+      </section>
+
+      <section id="surprise-section" class="card hidden accent-card">
+        <p class="eyebrow">Финал</p>
+        <h2 id="surprise-title" class="section-title"></h2>
+        <p id="surprise-text" class="hero-text"></p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
